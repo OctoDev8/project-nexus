@@ -1,18 +1,19 @@
 "use client";
-
 import { Container } from "@mui/material";
 import { login, signup } from "./login/actions";
 
 export default function Home() {
 	return (
 		<Container className="flex justify-center items-center min-h-screen px-4">
-			<div className="bg-primary text-white p-8 rounded-md shadow-lg w-full max-w-lg">
+			<div className="bg-primary p-8 rounded-xl shadow-lg w-full max-w-lg">
 				<header className="mb-8 text-center">
-					<h1 className="text-3xl font-semibold">Welcome to Project Nexus!</h1>
+					<h1 className="text-3xl sm:text-4xl font-semibold text-white">
+						Welcome to Project Nexus!
+					</h1>
 				</header>
 				<form className="flex flex-col gap-6">
 					<div className="flex flex-col gap-2">
-						<label htmlFor="email" className="text-lg">
+						<label htmlFor="email" className="text-lg font-medium">
 							Email:
 						</label>
 						<input
@@ -20,11 +21,11 @@ export default function Home() {
 							name="email"
 							type="email"
 							required
-							className="px-4 py-2 rounded-md border border-secondary focus:outline-none focus:ring-2 focus:ring-primary"
+							className="px-4 py-2 rounded-md border border-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary text-black"
 						/>
 					</div>
 					<div className="flex flex-col gap-2">
-						<label htmlFor="password" className="text-lg">
+						<label htmlFor="password" className="text-lg font-medium">
 							Password:
 						</label>
 						<input
@@ -32,7 +33,7 @@ export default function Home() {
 							name="password"
 							type="password"
 							required
-							className="px-4 py-2 rounded-md border border-secondary focus:outline-none focus:ring-2 focus:ring-primary"
+							className="px-4 py-2 rounded-md border border-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary text-black"
 						/>
 					</div>
 
@@ -40,14 +41,14 @@ export default function Home() {
 						<button
 							type="submit"
 							formAction={login}
-							className="bg-blue-400 text-white py-2 px-6 rounded-md w-full hover:bg-blue-500 transition"
+							className="bg-blue-400 text-white py-2 px-6 rounded-md w-full sm:w-auto hover:bg-blue-500 transition duration-300"
 						>
 							Log In
 						</button>
 						<button
 							type="submit"
 							formAction={signup}
-							className="bg-green-400 text-white py-2 px-6 rounded-md w-full hover:bg-green-500 transition"
+							className="bg-green-700 text-white py-2 px-6 rounded-md w-full sm:w-auto hover:bg-green-800 transition duration-300"
 						>
 							Sign Up
 						</button>

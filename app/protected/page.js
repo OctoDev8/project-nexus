@@ -34,9 +34,9 @@ export default function ProtectedPage() {
 
 	if (loading) {
 		return (
-			<section className="flex flex-col justify-center items-center h-screen bg-tertiary text-white px-4">
+			<section className="flex flex-col justify-center items-center h-screen bg-tertiary text-black px-4">
 				<CircularProgress />
-				<p className="mt-4 text-center">You're not supposed to be here...</p>
+				<p className="mt-4 text-center"></p>
 			</section>
 		);
 	}
@@ -52,7 +52,7 @@ export default function ProtectedPage() {
 				</Link>
 				<button
 					onClick={logOut}
-					className="bg-amber-400 px-4 py-2 rounded-md w-fit hover:bg-amber-500 transition duration-300"
+					className="bg-blue-400 px-4 py-2 rounded-md w-fit hover:bg-amber-500 transition duration-300"
 				>
 					Logout
 				</button>

@@ -52,7 +52,7 @@ export default function ProtectedPage() {
 				</Link>
 				<button
 					onClick={logOut}
-					className="bg-blue-400 px-4 py-2 rounded-md w-fit hover:bg-amber-500 transition duration-300"
+					className="bg-blue-400 px-4 py-2 rounded-md w-fit hover:bg-blue-500 transition duration-300"
 				>
 					Logout
 				</button>
